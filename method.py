@@ -21,16 +21,6 @@ import GPUtil as gpu_util
 import time
 
 
-# set random seeds:
-def setup_seed(seed=1000):
-    torch.manual_seed(seed)
-    torch.cuda.manual_seed(seed)
-    torch.cuda.manual_seed_all(seed)
-    np.random.seed(seed)
-    # random.seed(seed)
-    torch.backends.cudnn.benchmark = False  # 关闭cudnn的基准测试模式
-    torch.backends.cudnn.deterministic = True  # 开启cudnn的确定性模式
-
 
 def save_models(stat_params, cache_dir):
     # save_models(stat_params, args.cache_dir, i)
@@ -84,8 +74,6 @@ class p_A_x_func(nn.Module):
 
 
 def train(data, args, device, max_comp=50, **kw):
-    setup_seed()
-
     def h_dag(S):
         d = S.shape[0]
         A = S * S / (d * d)
