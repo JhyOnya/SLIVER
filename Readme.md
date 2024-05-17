@@ -7,9 +7,6 @@ Prevalent Gene Regulatory Network (GRN) construction methods rely on generalized
 
 - Hongyang Jiang, Yuezhu Wang, Chaoyi Yin, Hao Pan, Liqun Chen, Ke Feng, Yi Chang, Huiyan Sun
 
-**Corresponding Author:** Huiyan Sun  
-School of Artificial Intelligence, Jilin University, Changchun 130012, China  
-Email: huiyansun@jlu.edu.cn
 
 ## Requirements
 
